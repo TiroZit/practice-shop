@@ -5,6 +5,16 @@ const routes = [
 		path: "/",
 		name: "Главная",
 		component: () => import('/views/Main.vue'),
+	},
+	{
+		path: "/catalog",
+		name: "Каталог",
+		component: () => import('/views/Catalog.vue'),
+	},
+	{
+		path: "/:pathMatch(.*)",
+		name: "NotFound",
+		component: () => import('/views/NotFound.vue'),
 	}
 ];
 
