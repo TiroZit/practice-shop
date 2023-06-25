@@ -11,9 +11,6 @@ import Components from 'unplugin-vue-components/vite'
 export default defineConfig({
 	root: resolve(process.cwd(), path.srcFolder),
 	base: "",
-	server: {
-		port: "8080",
-	},
 	css: {
 		devSourcemap: true,
 		preprocessorOptions: {
@@ -59,12 +56,12 @@ export default defineConfig({
 			compiler: 'vue3',
 		}),
 	],
-	// server: {
-	// 	proxy: {
-	// 		"^/api": {
-	// 			target: "http://localhost:5005/",
-	// 		},
-	// 	},
-	// 	port: 8080,
-	// },
+	server: {
+		proxy: {
+			"^/api": {
+				target: "http://localhost:5238/",
+			},
+		},
+		port: 8080,
+	},
 });
