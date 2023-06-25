@@ -3,7 +3,7 @@ import { createRouter, createWebHistory } from "vue-router";
 const routes = [
 	{
 		path: "/",
-		name: "Главная",
+		name: "Main",
 		component: () => import('/views/Main.vue'),
 	},
 	{
@@ -13,9 +13,10 @@ const routes = [
 		props: true,
 	},
 	{
-		path: "/product",
+		path: "/product/:id",
 		name: "Product",
 		component: () => import('/views/Product.vue'),
+		props: true,
 	},
 	{
 		path: "/:pathMatch(.*)",

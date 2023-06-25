@@ -120,7 +120,7 @@
 																<p class="font-medium text-gray-900">{{ section.name }}</p>
 																<ul role="list" class="mt-6 space-y-6 sm:mt-4 sm:space-y-4">
 																	<li v-for="item in section.subCategories" :key="item.name" class="flex">
-																		<router-link @click="" :to="{name: 'Catalog', params: { id: item.id }}">{{ item.name }}</router-link>
+																		<router-link :to="{name: 'Catalog', params: { id: item.id }}">{{ item.name }}</router-link>
 																	</li>
 																</ul>
 															</div>
@@ -137,19 +137,19 @@
 						</PopoverGroup>
 
 						<div class="ml-auto flex items-center">
-							<div class="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
-								<a href="#" class="text-sm font-medium text-gray-700 hover:text-gray-800">Sign in</a>
-								<span class="h-6 w-px bg-gray-200" aria-hidden="true" />
-								<a href="#" class="text-sm font-medium text-gray-700 hover:text-gray-800">Create account</a>
-							</div>
+<!--							<div class="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">-->
+<!--								<a href="#" class="text-sm font-medium text-gray-700 hover:text-gray-800">Sign in</a>-->
+<!--								<span class="h-6 w-px bg-gray-200" aria-hidden="true" />-->
+<!--								<a href="#" class="text-sm font-medium text-gray-700 hover:text-gray-800">Create account</a>-->
+<!--							</div>-->
 
 							<!-- Search -->
-							<div class="flex lg:ml-6">
-								<a href="#" class="p-2 text-gray-400 hover:text-gray-500">
-									<span class="sr-only">Search</span>
-									<MagnifyingGlassIcon class="h-6 w-6" aria-hidden="true" />
-								</a>
-							</div>
+<!--							<div class="flex lg:ml-6">-->
+<!--								<a href="#" class="p-2 text-gray-400 hover:text-gray-500">-->
+<!--									<span class="sr-only">Search</span>-->
+<!--									<MagnifyingGlassIcon class="h-6 w-6" aria-hidden="true" />-->
+<!--								</a>-->
+<!--							</div>-->
 
 							<!-- Cart -->
 							<div class="ml-4 flow-root lg:ml-6">
