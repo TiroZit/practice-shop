@@ -1,11 +1,11 @@
 <script>
 import {defineComponent} from 'vue'
 import Header from "/components/Header.vue";
-import Brand from "/components/Main/Brand.vue";
+import Cart from "../components/Cart.vue";
 
 export default defineComponent({
 	name: "Layout",
-	components: {Header, Brand}
+	components: {Header, Cart}
 })
 </script>
 
@@ -16,6 +16,7 @@ export default defineComponent({
 			<component :is="Component"/>
 		</router-view>
 	</div>
+	<Cart/>
 </template>
 
 <style scoped>
